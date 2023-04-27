@@ -42,11 +42,9 @@ h1 {
 
 aside img {
     display: block;
-    width: 200px;
-    margin-top: 40px;
-    margin-left: 30px;
-    margin-bottom: 40px;
+    max-width: 75%;
     border: 2px solid black;
+    margin: 40px auto
 }
 
 h2 {
@@ -54,19 +52,25 @@ h2 {
     font-size: 30px;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
 .left {
-    float: left;
-    width: 21%;
+    flex-basis: 21%;
     background-color: #777613;
     margin-left: 15px;
+    padding-bottom: auto;
 }
 
 .right {
-    float: right;
-    width: 75%;
+    flex-basis: 76%;
+    margin-right: 15px;
 }
 
 p {
     font-size: 20px;
-    font-weight: 300;
 }
